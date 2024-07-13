@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+## Features
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Movie Search: Users can search for movies by entering a query in the search bar.
+- Movie Details: View detailed information about a selected movie, including title, year, runtime, IMDb rating, plot, and cast.
+- Add to Watched List: Users can add movies to a watched list and rate them.
+- Watched List Summary: Provides a summary of the watched movies, including average IMDb rating, user rating, and total runtime.
+- Persistent Storage: The watched list is stored in local storage, ensuring data persistence across sessions.
+- Responsive Design: The application is designed to be responsive and works well on various devices.
 
-## Available Scripts
+## Technologies Used
 
-In the project directory, you can run:
+- React: A JavaScript library for building user interfaces.
+- Custom Hooks: For managing state and local storage.
+- OMDb API: Used for fetching movie data.
+- CSS: Styling the application.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Clone the repository:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- git clone https://github.com/Ahmed-K-Fouda/popcorn-movie
+- cd movie-search-rating-app
 
-### `npm test`
+- Install the dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- npm install
 
-### `npm run build`
+- Start the development server:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Enter a movie name in the search bar to search for movies.
+- Click on a movie to view detailed information.
+- Add the movie to your watched list by rating it.
+- View and manage your watched list, including deleting movies from the list.
 
-### `npm run eject`
+## Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    src
+        components
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Box.js: A reusable component for collapsible boxes.
+- ErrorMessage.js: A component for displaying error messages.
+- Loader.js: A loader component displayed during data fetching.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Logo.js: A logo component for the application.
+- Main.js: The main content wrapper component.
+- Movie.js: A component for displaying individual movie details.
+- MovieDetails.js: A component for fetching and displaying detailed movie information.
+- MovieList.js: A component for displaying a list of movies.
+- NavBar.js: A navigation bar component.
+- NumResult.js: A component for displaying the number of search results.
+- Search.js: A search bar component.
+- StarRating.js: A component for rating movies with stars.
+- WatchedMovie.js: A component for displaying individual watched movies.
+- WatchedMovieList.js: A component for displaying the list of watched movies.
+- WatchedSummary.js: A component for displaying a summary of watched movies.
+- hooks
+- useKey.js: A custom hook for handling keyboard events.
+- useLocalStorageState.js: A custom hook for managing state with local storage.
+- useMovies.js: A custom hook for fetching movies from the OMDb API.
+- App.js: The main application component.
+- index.js: The entry point of the application.
+- index.css: The main stylesheet.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Screenshots
 
-## Learn More
+![Screenshot 1](./public/images/popcorn.PNG)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Live Demo
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Check out the live demo [here]
