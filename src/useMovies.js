@@ -49,7 +49,7 @@ export function useMovies(query) {
         fetchMovies();
       }, 200);
     },
-    [query]
+    [query, controller]
   );
   return { movies, isLoading, error };
 }
