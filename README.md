@@ -71,4 +71,4 @@
 
 ## Live Demo
 
-Check out the live demo [here] popcorn-movie-details.netlify.app
+Check out the live demo [here] (https://popcorn-movie-details.netlify.app/)
